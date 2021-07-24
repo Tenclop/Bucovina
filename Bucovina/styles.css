@@ -281,7 +281,7 @@ h1 {
 
 @media screen and (max-width: 600px) {
   .bg-img {
-    background-image: url("../images/f587699b63d2b9390e51e0dfb2e78822.jpg");
+    background-image: url("images/f587699b63d2b9390e51e0dfb2e78822.jpg");
     width: 100%;
     height: 120%;
   }

@@ -1,0 +1,470 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-icons: #929292;
+  --clr-text: #e9e9e1;
+  --clr-bg-dark: #242424;
+  --clr-bg-light: #3b3b3b;
+  --clr-borderBtn: #98ff98;
+  --clr-btnHover: #82f082;
+  --clr-infoB: #44593a;
+}
+
+body,
+html {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Indie Flower", cursive, "sans serif";
+}
+
+/* 1. Nav-bar */
+
+nav {
+  line-height: 1;
+}
+.nav-links {
+  transform: translateY(-30%);
+}
+ul {
+  background-color: transparent;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0;
+}
+ul a {
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+ul a:hover {
+  color: var(--clr-btnHover);
+}
+
+li {
+  margin: 1rem 2rem;
+  font-family: "Akaya Telivigala", cursive;
+  color: var(--clr-text);
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 15rem;
+  opacity: 0.6;
+  transform: translateY(70%);
+}
+
+/* 2. Backgound image */
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 115%;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  background-image: url("../images/BucovFade.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 3.Backgound text */
+
+.h-text {
+  margin-top: 6em;
+  background-color: rgba(177, 174, 174, 0.109);
+  height: 13rem;
+}
+
+.h-text p {
+  text-align: center;
+  color: var(--clr-text);
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.text1 {
+  color: var(--clr-text);
+  text-align: justify;
+  text-align-last: center;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  margin-bottom: 4em;
+  font-size: 1.5em;
+}
+
+/* 4.Backgound button */
+.container-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+}
+
+/* 5. Backgound button */
+
+.btn-visit {
+  height: 3rem;
+  width: 10rem;
+  background-color: transparent;
+  border: 4px solid var(--clr-borderBtn);
+  cursor: pointer;
+}
+
+.btn-text {
+  color: var(--clr-borderBtn);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.btn-text a {
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+.btn-text:hover {
+  background-color: var(--clr-btnHover);
+  color: var(--clr-text);
+}
+
+.trees {
+  margin-top: 8.5em;
+  width: 100%;
+}
+
+.activities {
+  height: 5em;
+  width: 5em;
+  display: block;
+  margin: 0em auto;
+}
+.activities-txt {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.activities-txt :nth-child(2) {
+  font-size: 0.55em;
+}
+
+.hero-container {
+  margin-top: -32rem;
+  height: 13.5rem;
+  display: flex;
+  width: 100%;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  width: 23%;
+  height: 12em;
+  cursor: pointer;
+}
+
+.hero-attraction-text {
+  display: flex;
+  float: left;
+  justify-content: space-around;
+}
+
+.hero-attraction-text p {
+  position: relative;
+  width: 21em;
+  height: 2em;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+  font-size: 1em;
+  color: var(--clr-infoB);
+  font-weight: bold;
+}
+
+.hero-attraction-text p:nth-of-type(2n) {
+  text-align: center;
+}
+
+/* Space between text */
+
+.move1 {
+  margin-left: 17.6em;
+}
+.move2 {
+  margin-left: -6.5em;
+}
+.move3 {
+  margin-left: 5.2em;
+}
+
+/* Bucov info container */
+.info-bucov {
+  background-color: var(--clr-infoB);
+  margin-top: 6.5em;
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+  height: 20rem;
+  line-height: 1.5rem;
+  z-index: 2;
+  position: relative;
+}
+
+.info-bucov > p,
+h1 {
+  color: var(--clr-text);
+}
+
+.info-bucov h1 {
+  float: left;
+  font-size: 3vw;
+  margin-left: 1.5em;
+  margin-top: 1em;
+}
+
+.info-bucov p {
+  float: left;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1.5em 15em;
+  font-size: 1.35vw;
+  width: 60%;
+}
+
+.girl-dancing {
+  position: relative;
+  margin-top: -10rem;
+  z-index: 1;
+  width: 100%;
+  height: 29rem;
+}
+
+.footer-img {
+  background-color: var(--clr-infoB);
+  width: 100%;
+  height: 3em;
+  display: flex;
+  float: left;
+  justify-content: center;
+  gap: 5em;
+  margin-top: -10px;
+}
+
+.img-ft {
+  height: 1.5em;
+  width: 1.5em;
+  margin-top: 0.8em;
+  cursor: pointer;
+}
+
+.leaf {
+  height: 2.3em;
+  width: 2.3em;
+  margin-top: 0.5em;
+}
+
+.leaf2 {
+  height: 2.3em;
+  width: 2.3em;
+  margin-top: 0.5em;
+  transform: scaleX(-1);
+}
+
+@media screen and (max-width: 600px) {
+  .bg-img {
+    background-image: url("../images/f587699b63d2b9390e51e0dfb2e78822.jpg");
+    width: 100%;
+    height: 120%;
+  }
+
+  li {
+    line-height: 5em;
+    margin: 0.9rem 3.5rem 0rem 0rem;
+    font-family: "Akaya Telivigala", cursive;
+    color: var(--clr-text);
+    font-size: 0.85em;
+    text-shadow: 2px 2px #000000;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #1d976c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #93f9b9,
+      #1d976c
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #93f9b9,
+      #1d976c
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 150vh;
+    width: 100%;
+    flex-direction: column;
+    z-index: 1;
+    clip-path: circle(300px at 90% -50%);
+    -webkit-clip-path: circle(300px at 90% -50%);
+    transition: all 1s ease-out;
+  }
+  .nav-links.open {
+    clip-path: circle(3000px at 90% -50%);
+    -webkit-clip-path: circle(3000px at 90% -50%);
+  }
+  .nav {
+    position: relative;
+  }
+
+  .nav-links li a {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.4s;
+    margin-top: -5.5em;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(5) {
+    transition: all 0.5s ease 0.8s;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  li.fade {
+    opacity: 1;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 6%;
+    z-index: 11;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    opacity: 0.9;
+    transform: translateY(-330%);
+    position: absolute;
+  }
+  .h-text {
+    margin-top: 10.5em;
+    margin-right: 1em;
+    background-color: rgba(177, 174, 174, 0.109);
+    height: 15rem;
+    text-shadow: 2px 2px #000000;
+  }
+
+  .text1 {
+    font-size: 0.7em;
+    margin: 0 1em 0 1em;
+  }
+  .container-btn {
+    margin-top: 5em;
+  }
+
+  .trees {
+    margin-top: 7em;
+    margin-left: -15em;
+    width: 530%;
+  }
+  .grey-trees {
+    display: none;
+  }
+
+  .activities {
+    margin-top: -3em;
+  }
+  .hero-container {
+    margin: 2.5rem 6.5em 0 0.5em;
+    height: 35.5rem;
+    width: 95%;
+    gap: 4em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-img {
+    width: 80%;
+    height: 9em;
+    border: 1px solid rgb(117, 113, 113);
+    box-shadow: 5px 10px rgb(53, 52, 52);
+  }
+  .hero-attraction-text p {
+    font-size: 3.6vmin;
+    margin-top: -40em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+
+  .move1 {
+    margin-left: 38em;
+    padding-top: 9.5em;
+  }
+  .move2 {
+    margin-left: 27em;
+    padding-top: 25em;
+  }
+  .move3 {
+    margin-left: 40em;
+    padding-top: 41em;
+  }
+  .info-bucov {
+    margin: 3em auto;
+    width: 90%;
+  }
+  .info-bucov h1 {
+    font-size: 6vw;
+  }
+  .info-bucov p {
+    text-align: justify;
+    font-weight: bold;
+    margin: 0em 3em;
+    font-size: 3vw;
+    display: block;
+    width: 80%;
+  }
+
+  #slideIn2 {
+    font-size: 3.4vw;
+  }
+  .girl-dancing {
+    position: relative;
+    margin-top: -13rem;
+    z-index: 1;
+    width: 100%;
+    height: 20rem;
+  }
+}

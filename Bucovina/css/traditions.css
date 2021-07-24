@@ -1,0 +1,415 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-icons: #929292;
+  --clr-text: #e9e9e1;
+  --clr-bg-dark: #242424;
+  --clr-bg-light: #3b3b3b;
+  --clr-borderBtn: #98ff98;
+  --clr-btnHover: #82f082;
+  --clr-infoB: #44593a;
+}
+
+body,
+html {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+nav {
+  line-height: 5;
+}
+
+ul {
+  background-color: transparent;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+ul a {
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+ul a:hover {
+  color: var(--clr-btnHover);
+}
+
+li:hover {
+  color: var(--clr-btnHover);
+}
+
+li {
+  margin: 1rem 1rem;
+  font-family: "Akaya Telivigala", cursive;
+  color: var(--clr-text);
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  background-image: url("../images/BucovFadeCrop.jpg");
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 14rem;
+  margin-right: 5rem;
+  opacity: 0.6;
+  margin-top: 2rem;
+}
+.h-text {
+  display: block;
+  height: 100%;
+  margin-top: 2em;
+}
+
+.tradition-intro-txt,
+.tradition-intro-txt-easter {
+  letter-spacing: 0.05em;
+  font-size: 1em;
+  font-family: "Indie Flower", cursive;
+}
+.christmas-txt,
+.easter-txt {
+  letter-spacing: 0.05em;
+  font-size: 0.6em;
+  font-family: "Indie Flower", cursive;
+}
+@media screen and (max-width: 600px) {
+  .bg-img {
+    width: 100%;
+    height: 24%;
+  }
+
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    opacity: 0.9;
+    transform: translateY(-6%);
+    position: absolute;
+  }
+  .h-text {
+    display: block;
+    height: 100%;
+    margin-top: 5.5em;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 6%;
+    z-index: 2;
+  }
+  .nav-links {
+    position: fixed;
+    background: #1d976c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #93f9b9,
+      #1d976c
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #93f9b9,
+      #1d976c
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 150vh;
+    width: 100%;
+    flex-direction: column;
+    z-index: 1;
+    clip-path: circle(300px at 90% -50%);
+    -webkit-clip-path: circle(300px at 90% -50%);
+    transition: all 1s ease-out;
+    margin-top: -1em;
+  }
+  .nav-links.open {
+    clip-path: circle(3000px at 90% -50%);
+    -webkit-clip-path: circle(3000px at 90% -50%);
+  }
+  .nav {
+    position: relative;
+  }
+
+  .nav-links li a {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.4s;
+    margin-top: -30em;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(5) {
+    transition: all 0.5s ease 0.8s;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  li.fade {
+    opacity: 1;
+  }
+  li {
+    line-height: 5em;
+    margin: 0.9rem 1rem 0rem 0rem;
+    font-family: "Akaya Telivigala", cursive;
+    color: var(--clr-text);
+    font-size: 0.85em;
+    text-shadow: 2px 2px #000000;
+  }
+  .vector-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .vector {
+    transform: translateY(400%);
+    width: 10%;
+  }
+
+  .h-text p {
+    text-align: center;
+    color: var(--clr-text);
+    font-size: 1.2em;
+    font-family: "Indie Flower", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .book {
+    height: 2em;
+    width: 3em;
+    display: block;
+    margin: 3em auto;
+  }
+
+  .book-txt {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Indie Flower", cursive;
+    margin: -1em 1em 0 1em;
+  }
+
+  .book-txt :nth-child(2) {
+    font-size: 0.55em;
+    font-family: "Indie Flower", cursive;
+    margin: 0 1em 0 1em;
+  }
+  .tradition-img,
+  .tradition-img-easter {
+    margin: 1em 0em 0em 1em;
+    width: 92.5%;
+    height: 150px;
+    box-shadow: 5px 5px 10px rgb(53, 52, 52);
+  }
+
+  .traditions-img img,
+  .traditions-img-easter img {
+    height: 150px;
+  }
+  .two-img,
+  .two-img-easter {
+    float: left;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 0.8em;
+  }
+
+  .tradition-img1,
+  .tradition-img1-easter {
+    width: 33.33%;
+    float: left;
+    padding: 3px;
+  }
+  .tradition-img1 img,
+  .tradition-img1-easter img {
+    height: 95px;
+    box-shadow: 5px 5px 10px rgb(53, 52, 52);
+  }
+  .tradition-intro-txt {
+    margin: 0em 1em;
+    margin-top: 7em;
+  }
+
+  .tradition-intro-txt-easter {
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 2em;
+  }
+  .christmas-txt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .easter-txt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .color {
+    background-color: rgba(97, 96, 96, 0.041);
+    background: url("../images/traditions/1.png");
+    background-repeat: repeat-x;
+    background-size: 75.5%, 70%;
+  }
+  .color ~ .color {
+    background: url("../images/traditions/1.png");
+    background-repeat: repeat-x;
+    background-size: 175.5%, 70%;
+    height: 280px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1380px) {
+  ul {
+    margin-top: -7em;
+  }
+  .h-text {
+    display: block;
+    height: 100%;
+    margin-top: -2em;
+  }
+
+  .h-text p {
+    text-align: center;
+    color: var(--clr-text);
+    font-size: 1.2em;
+    font-family: "Indie Flower", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vector-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .vector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-0.7em);
+    width: 4%;
+    margin: 0 auto;
+  }
+
+  .book {
+    height: 5em;
+    width: 5em;
+    display: block;
+    margin: 6em auto;
+  }
+  .color {
+    background-color: rgba(97, 96, 96, 0.041);
+    background: url("../images/traditions/1.png");
+    background-repeat: repeat-x;
+    background-size: 55%, 40%;
+  }
+  .book-txt {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: "Indie Flower", cursive;
+    margin: -1.5em 1em 0 1em;
+  }
+
+  .book-txt :nth-child(2) {
+    font-size: 0.55em;
+    font-family: "Indie Flower", cursive;
+    margin: 0 8em 0 8em;
+  }
+  .christmas-txt,
+  .easter-txt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.25vw;
+    margin-top: 5em;
+  }
+
+  .tradition-img,
+  .tradition-img-easter {
+    margin: 4em 0em 0em 1em;
+    margin-left: 11em;
+    width: 71.5%;
+    height: 200px;
+    box-shadow: 5px 5px 10px rgb(53, 52, 52);
+  }
+
+  .traditions-img img,
+  .traditions-img-easter img {
+    height: 400px;
+  }
+  .two-img,
+  .two-img-easter {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .tradition-img1,
+  .tradition-img1-easter {
+    margin: 23px;
+    transform: translateX(8.5em);
+  }
+
+  .tradition-img1 img,
+  .tradition-img1-easter img {
+    height: 200px;
+    width: 285px;
+    box-shadow: 5px 5px 10px rgb(53, 52, 52);
+  }
+  .tradition-intro-txt,
+  .tradition-intro-txt-easter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0em 6em;
+    font-size: 1.5vw;
+    margin-top: 5em;
+    background: rgba(88, 88, 86, 0.103);
+  }
+  .tradition-intro-txt-easter {
+    margin-bottom: 1em;
+  }
+}

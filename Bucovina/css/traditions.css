@@ -297,7 +297,7 @@ li {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1380px) {
+@media (min-width: 1025px) and (max-width: 1480px) {
   ul {
     margin-top: -7em;
   }
